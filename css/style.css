@@ -161,7 +161,7 @@ h6,
 /*** Hero Header ***/
 .hero-header {
     margin-top: -75px;
-    background: url(../img/fondo.png) center center no-repeat;
+    background: url(../img/fondo2.PNG) center center no-repeat;
     background-size: cover;
     min-height: 90vh;
 }
@@ -260,7 +260,7 @@ h6,
 }
 
 .service-item:hover .service-icon {
-    background: #FFFFFF;
+    background: var(--secondary);
 }
 
 .service-item h5,
