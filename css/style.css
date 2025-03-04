@@ -20,6 +20,15 @@ body {
 .service-item {
     background-color: #282e35de  !important;
 }
+/***carrusel invisible ***/
+.fade {
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
+
+.hidden {
+    opacity: 0;
+}
 
 /*** Spinner ***/
 
