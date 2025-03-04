@@ -20,15 +20,16 @@ body {
 .service-item {
     background-color: #282e35de  !important;
 }
-/***carrusel invisible ***/
-.fade {
-    transition: opacity 1s ease-in-out;
-    opacity: 1;
-}
 
-.hidden {
+.carousel-item {
+    transition: opacity 0.8s ease-in-out !important;
     opacity: 0;
-}
+  }
+  
+  .carousel-item.active {
+    opacity: 1;
+  }
+  
 
 /*** Spinner ***/
 
