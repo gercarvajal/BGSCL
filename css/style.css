@@ -1,11 +1,13 @@
 /********** Template CSS **********/
 :root {
-    --primary: #0a191c;
+    --primary: #0c1f23;
     --secondary: #ffb442;
     --light: #8d96b2;
     --dark: #0c1f23;
 
 /********** modificaciones a los colores de boostrap **********/
+
+
     
 }
 .bg-primary {
@@ -20,7 +22,10 @@ body {
 .service-item {
     background-color: #282e35de  !important;
 }
-
+/*** desplazamiento entre secciones ***/
+html {
+    scroll-behavior: smooth;
+}
 .carousel-item {
     transition: opacity 0.8s ease-in-out !important;
     opacity: 0;
