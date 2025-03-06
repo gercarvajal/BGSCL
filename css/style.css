@@ -830,11 +830,5 @@ h6,
     }
   }
 
-  .game-section .item {
-    border-radius: 10px; /* Ajusta el valor a tu preferencia */
-}
-.game-section .item img {
-    border-radius: 10px;
-    object-fit: cover; /* Asegura que la imagen cubra bien el área del div */
-}
+
   

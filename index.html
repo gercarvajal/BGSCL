@@ -369,15 +369,14 @@
     <div id="ar" class="container-fluid bg-primary  py-5">
 
         <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
-            <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">Servicios</div>
+            <div class="btn btn-sm border rounded-pill text-warning px-3 mb-3">Servicios</div>
             <h1 class="mb-4 text-white">Servicios y Tecnicas Aplicadas </h1>
         </div>
 
-        <section class="game-section">
-            
+        <section class="game-section"> 
             <div class="owl-carousel custom-carousel owl-theme">
                     
-                        <div class="item active" style="background-image: url('img/servicios/1.jpg');">
+                        <div class="item " style="background-image: url('img/servicios/1.jpg');">
 
                         <div class="item-desc">
                         <h4 class="text-white">Magnetometría
@@ -423,27 +422,44 @@
                              continua, que resultan en la aparición de fuerzas electromotrices secundarias.</p>
                         </div>
                     </div>
-                    <div class="item " style="background-image: url('img/fernando.png');">
+                    <div class="item " style="background-image: url('img/servicios/4.jpg');">
                         <div class="item-desc">
-                            <h4 class="text-white">Dota 2</h4>
-                        <p>PUBG 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
-                            Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+                            <h5 class="text-white">Tomografía Eléctrica
+                                [SEV Sondajes
+                                Eléctrico Vertical]</h5>
+                            <h5 class="text-warning">(Equipos ABEM,
+                                    Modelo Terrameter
+                                    LS-2)</h5>
+                        <p>Este método de prospección se basa en la existencia de variaciones de las
+                            propiedades eléctricas del suelo y subsuelo
+                            dentro de un polígono determinado
+                            para la muestra. En particular se mide la
+                            resistividad de las distintas formaciones
+                            del subsuelo, teniendo como objetivo
+                            determinar la distribución en profundidad
+                            (resistividades y espesores) de los niveles
+                            geo-eléctricos existentes, conjuntamente
+                            información lateral y en profundidad.</p>
                         </div>
                     </div>
-                    <div class="item " style="background-image: url('img/fernando.png');">
+                    <div class="item " style="background-image: url('img/servicios/5.jpg');">
                         <div class="item-desc">
-                            <h4 class="text-white">Dota 2</h4>
-                        <p>Battle royale where 100 players fight to be the last person standing. which was a community-created mod
-                            for Blizzard Entertainment's Warcraft III.</p>
+                            <h5 class="text-white">Transciente
+                                Electromagnético
+                                [TEM / Nano TEM / TEM
+                                Profundo]</h5>
+                            <h5 class="text-warning">(Equipos ABEM
+                                modelo WalkTEM 2 +
+                                transmisores TX 20 &
+                                TX 60)</h5>
+                        <p>Se genera un campo electromagnético (EM) al hacer pasar una corriente variable 
+                            por un loop de alambre conductor. Este campo primario induce corrientes eléctricas 
+                            en la tierra, especialmente en materiales más conductores, generando un campo EM secundario.
+                             La combinación de ambos campos es detectada por un loop receptor o antena, donde una mayor 
+                             conductividad o tamaño del cuerpo conductor amplifica la señal detectada.</p>
                         </div>
                     </div>
-                    <div class="item " style="background-image: url('img/fernando.png');">
-                        <div class="item-desc">
-                            <h4 class="text-white">Dota 2</h4>
-                        <p>Far Cry 5 is a 2018 first-person shooter game developed by Ubisoft.
-                            which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
-                        </div>
-                    </div>
+                   
           
             </div>
         </section>
@@ -696,7 +712,9 @@
         <script>
             $(".custom-carousel").owlCarousel({
         autoWidth: true,
-        loop: true
+        loop: true,
+        lazyLoad: true
+       
         });
         $(document).ready(function () {
         $(".custom-carousel .item").click(function () {
