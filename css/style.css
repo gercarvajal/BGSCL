@@ -795,18 +795,21 @@ h6,
   
   @media (max-width: 767px) {
     body {
-      font-size: 14px;
+      font-size: 13px;
     }
+    
     h2 {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      margin-top: -10px;
     }
     h3 {
       margin: 0 0 8px;
-      font-size: 19px;
+      font-size: 16px;
       line-height: 24px;
     }
     .line-title {
-      width: 250px;
+      width: 20px;
     }
   
     /* -------- Landing page ------- */
@@ -814,9 +817,9 @@ h6,
       padding: 30px 15px 20px;
     }
     .game-section .item {
-      margin: 0 10px 40px;
+      margin: 0 10px 20px;
       width: 200px;
-      height: 280px;
+      height: 350px;
     }
     .game-section .item.active {
       width: 270px;
@@ -824,10 +827,11 @@ h6,
       -webkit-box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
     }
     .game-section .item-desc {
-      padding: 0 14px 5px;
+      padding: 0 8px 2px;
       transform: translateY(calc(100% - 42px));
       -webkit-transform: translateY(calc(100% - 42px));
     }
+  
   }
 
 
