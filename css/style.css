@@ -7,7 +7,31 @@
 
 /********** modificaciones a los colores de boostrap **********/
 
+    /*****  carrusel servicios   ****/
 
+    .carousel-item {
+      position: relative;
+  }
+  
+  .carousel-caption {
+      position: absolute;
+      bottom: -15px; /* Ajusta este valor según sea necesario */
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.2); /* Fondo semi-transparente */
+      color: white;
+      padding: 15px;
+      text-align: center;
+      border-radius: 10px 10px 10px 10px;
+ 
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: 50%; /* Ajusta según necesites */
+    object-fit: contain; /* Mantiene toda la imagen visible sin recortes */
+   
+}
     
 }
 .bg-primary {
@@ -26,14 +50,7 @@ body {
 html {
     scroll-behavior: smooth;
 }
-.carousel-item {
-    transition: opacity 0.8s ease-in-out !important;
-    opacity: 0;
-  }
-  
-  .carousel-item.active {
-    opacity: 1;
-  }
+
   
 
 /*** Spinner ***/
