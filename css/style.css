@@ -831,6 +831,10 @@ h6,
       transform: translateY(calc(100% - 42px));
       -webkit-transform: translateY(calc(100% - 42px));
     }
+    .game-section p {
+      margin-top: 3px; /* Ajusta según necesites */
+      margin-bottom: 3px;
+    }
   
   }
 
