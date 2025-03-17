@@ -849,11 +849,64 @@ h6,
       -webkit-transform: translateY(calc(100% - 42px));
     }
     .game-section p {
-      margin-top: 3px; /* Ajusta según necesites */
+      margin-top: 3px; /*  */
       margin-bottom: 3px;
     }
   
   }
 
-
+/* cambios carrusel  */
   
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Asegura que ocupe todo el ancho */
+}
+
+/* Botones de navegación */
+/* Estilos para los botones de navegación */
+
+.custom-carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none; /* Evita interferencias con clics en los slides */
+}
+
+.custom-carousel .owl-prev,
+.custom-carousel .owl-next {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 30px;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 100;
+  pointer-events: all; /* Permite hacer clic en los botones */
+  transition: background 0.3s, transform 0.2s ease-in-out;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 8px; /* 🔵 Bordes redondeados */
+}
+
+/* Efecto hover para mejorar la apariencia */
+.custom-carousel .owl-prev:hover,
+.custom-carousel .owl-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: translateY(-50%) scale(1.1); /* 🔄 Efecto ligero de zoom */
+}
+
+/* Posición de los botones */
+.custom-carousel .owl-prev {
+  left: -50px;
+}
+
+.custom-carousel .owl-next {
+  right: -50px;
+}

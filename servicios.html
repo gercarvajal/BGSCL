@@ -223,57 +223,60 @@
     </div>
     <!-- Service End -->
 
-    <div id="ar" class="container-fluid bg-primary  py-5">
-
+    <div id="ar" class="container-fluid bg-primary py-5">
         <section class="game-section">
-            <h2 class="line-title">trending games</h2>
-            <div class="owl-carousel custom-carousel owl-theme">
-            <div class="item active" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/dota-2.jpg);">
-                <div class="item-desc">
-                <h3>Dota 2</h3>
-                <p>Dota 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
-                    Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
+            <h2 class="line-title">Trending Games</h2>
+            <div class="carousel-container">
+                <button id="prevBtn" class="nav-btn">⟨</button>
+                <div class="owl-carousel custom-carousel owl-theme">
+                    <div class="item active" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/dota-2.jpg);">
+                        <div class="item-desc">
+                            <h3>Dota 2</h3>
+                            <p>Dota 2 is a multiplayer online battle arena by Valve.</p>
+                            <button class="view-more">Ver más</button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/winter-3.jpg);">
+                        <div class="item-desc">
+                            <h3>The Witcher 3</h3>
+                            <p>The Witcher 3 is an action RPG developed by CD Projekt.</p>
+                            <button class="view-more">Ver más</button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/rdr-2.jpg);">
+                        <div class="item-desc">
+                            <h3>RDR 2</h3>
+                            <p>RDR 2 is an open-world Western action-adventure game.</p>
+                            <button class="view-more">Ver más</button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/pubg.jpg);">
+                        <div class="item-desc">
+                            <h3>PUBG Mobile</h3>
+                            <p>PUBG is a battle royale game developed by PUBG Corporation.</p>
+                            <button class="view-more">Ver más</button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/fortnite.jpg);">
+                        <div class="item-desc">
+                            <h3>Fortnite</h3>
+                            <p>Battle royale where 100 players fight to be the last standing.</p>
+                            <button class="view-more">Ver más</button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/far-cry-5.jpg);">
+                        <div class="item-desc">
+                            <h3>Far Cry 5</h3>
+                            <p>Far Cry 5 is a 2018 first-person shooter game by Ubisoft.</p>
+                            <button class="view-more">Ver más</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/winter-3.jpg);">
-                <div class="item-desc">
-                <h3>The Witcher 3</h3>
-                <p>The Witcher 3 is a multiplayer online battle arena by Valve. The game is a sequel to Defense
-                    of the Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
-                </div>
-            </div>
-            <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/rdr-2.jpg);">
-                <div class="item-desc">
-                <h3>RDR 2</h3>
-                <p>RDR 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
-                    Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
-                </div>
-            </div>
-            <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/pubg.jpg);">
-                <div class="item-desc">
-                <h3>PUBG Mobile</h3>
-                <p>PUBG 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the
-                    Ancients, which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
-                </div>
-            </div>
-            <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/fortnite.jpg);">
-                <div class="item-desc">
-                <h3>Fortnite</h3>
-                <p>Battle royale where 100 players fight to be the last person standing. which was a community-created mod
-                    for Blizzard Entertainment's Warcraft III.</p>
-                </div>
-            </div>
-            <div class="item" style="background-image: url(https://www.yudiz.com/codepen/expandable-animated-card-slider/far-cry-5.jpg);">
-                <div class="item-desc">
-                <h3>Far Cry 5</h3>
-                <p>Far Cry 5 is a 2018 first-person shooter game developed by Ubisoft.
-                    which was a community-created mod for Blizzard Entertainment's Warcraft III.</p>
-                </div>
-            </div>
-            </div>
+                <button id="nextBtn" class="nav-btn">⟩</button>
             </div>
         </section>
     </div>
+    
     <!-- Footer Start -->
     <div class="container-fluid bg--light text-white-50 footer pt-5">
         <div class="container py-5">
@@ -345,18 +348,53 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script>
-            $(".custom-carousel").owlCarousel({
+   $(document).ready(function () {
+    var owl = $(".custom-carousel").owlCarousel({
         autoWidth: true,
-        loop: true
-        });
-        $(document).ready(function () {
-        $(".custom-carousel .item").click(function () {
-            $(".custom-carousel .item").not($(this)).removeClass("active");
-            $(this).toggleClass("active");
-        });
-        });
+        loop: true,
+        nav: false, // Ocultamos los botones por defecto
+        dots: false
+    });
 
-      </script>
+    // Botones personalizados de navegación
+    $("#prevBtn").click(function () {
+        owl.trigger("prev.owl.carousel");
+    });
+
+    $("#nextBtn").click(function () {
+        owl.trigger("next.owl.carousel");
+    });
+
+    // Manejo de la clase "active" y la visibilidad del botón
+    $(".custom-carousel .item").click(function (event) {
+        // Si se hace clic en el botón "Ver más", evitar que la tarjeta se active/desactive
+        if ($(event.target).hasClass("view-more")) return;
+
+        let $this = $(this);
+
+        // Si la tarjeta ya está activa, la desactiva y muestra el botón
+        if ($this.hasClass("active")) {
+            $this.removeClass("active");
+        } else {
+            // Desactiva todas las demás y activa la seleccionada
+            $(".custom-carousel .item").removeClass("active");
+            $this.addClass("active");
+        }
+    });
+
+    // Asegurar que los botones "Ver más" se oculten correctamente cuando un item está activo
+    $(".custom-carousel .item").each(function () {
+        if ($(this).hasClass("active")) {
+            $(this).find(".view-more").css("opacity", "0");
+        } else {
+            $(this).find(".view-more").css("opacity", "1");
+        }
+    });
+});
+
+
+    </script>
+    
 </body>
 
 </html>

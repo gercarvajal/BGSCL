@@ -501,12 +501,15 @@
         </div>
 
         <section class="game-section"> 
+            
             <div class="owl-carousel custom-carousel owl-theme">
-                    
-                    <div class="item " style="background-image: url('img/servicios/1.webp');">
+                 
+                    <div class="item active" style="background-image: url('img/servicios/1.webp');">
                             <div class="item-desc">
                                         <h2 class="text-white">Magnetometría
                                             Terrestre</h2>
+                                       
+                                        <a class="btn text-white" href="">Leer mas</a>
                                         <p class="text-warning">(Equipos Gem
                                             Systems + Sensores
                                             Overhauser)</p>
@@ -767,8 +770,9 @@
                         </div>
                     </div>
                     
-          
+                 
             </div>
+           
         </section>
     </div>
     <!-- Feature End -->
@@ -864,18 +868,12 @@
                         <!-- Tarjeta 1 -->
                         <div class="col-md-4 wow fadeIn" data-wow-delay="0.1s">
                             <div class="team-item  text-center rounded p-4 pt-0">
-                                <img class="img-fluid rounded-circle p-4" src="img/naser.png" alt="">
-                                <h4 class="mb-0 text-white">Naser Meqbel</h4>
+                                <img class="img-fluid rounded-circle p-4" src="img/erick.jpg" alt="">
+                                <h4 class="mb-0 text-white">Erick Valenzuela</h4>
                                 <h5 class="mb-0 text-warning">Geofísico</h5>
                                 <br>
-                                <p class="mb-3 text-white-50">Ph D. en Geofísica de la Freie Universität
-                                    Berlin, Master en Geofísica de la
-                                    Universität zu Köln.<br>
-                                    Consultor Senior, experto en métodos
-                                    Geofísicos: Magnetometría Terrestre
-                                    - Gravimetría - IP Resistividad 2D &
-                                    3D - Magnetotelúrico - Transciente
-                                    Electromagnético.</p>
+                                <p class="mb-3 text-white-50">CEO & Fundador de Geophysical Studies Chile <br> 
+                                    Especialista en Métodos Geofísicos para la Exploración del Terreno</p>
                                 <div class="d-flex justify-content-center mt-3">
                                     
                                     <a class="btn btn-square btn-warning m-1" href="https://www.linkedin.com/in/dr-naser-meqbel-b1267385/"><i class="fab fa-linkedin-in"></i></a>
@@ -944,15 +942,14 @@
                     <a href="index.html" class="d-inline-block mb-3">
                         <h1 class="text-white">Geophysical Studies Chile </h1>
                     </a>
-                    <h5 class="text-white mb-4">Casa Matriz</h5>
-                    <p><i class="fa fa-map-marker-alt me-3"></i>Mario Peña Carreño 5447. La Serena, Chile.</p>
+                    
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
                     <h5 class="text-white mb-4">Contactanos</h5>
-                    <p><i class="fa fa-map-marker-alt me-3"></i>José Manuel Balmaceda, Of. 41. La Serena, Chile</p>
                     <p><i class="fa fa-phone-alt me-3"></i>+56 9 7669 3782</p>
-                    <p><i class="fa fa-phone-alt me-3"></i>+56 51 2 271 324</p>
-                    <p><i class="fa fa-envelope me-3"></i>contacto@geophysicalstudies.cl</p>
+                    <h5 class="text-white mb-4">Casa Matriz</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Huanhuali 850 Oficina 408,La Serena, Chile.</p>
+                  
                     
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
@@ -960,16 +957,14 @@
                     <a class="btn btn-link" href="#so">Sobre Nosotros</a>
                     <a class="btn btn-link" href="#ar">Areas de trabajo</a>
                     <a class="btn btn-link" href="#mv">Misión & Visión</a>
-                    <a class="btn btn-link" href="#nu">Nuestro Equipo</a>
+                    <a class="btn btn-link" href="#te">Tecnologias</a>
                     <a class="btn btn-link" href="#se">Servicios</a>
+                    <a class="btn btn-link" href="#nu">Nuestro Equipo</a>
+                   
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
-                    <h5 class="text-white mb-4">Nuestros Servicios</h5>
-                    <a class="btn btn-link" href="">1</a>
-                    <a class="btn btn-link" href="">2</a>
-                    <a class="btn btn-link" href="">3</a>
-                    <a class="btn btn-link" href="">4</a>
-                    <a class="btn btn-link" href="">5</a>
+                    <h5 class="text-white mb-4">Trabaje con nosotros</h5>
+                    <p><i class="fa fa-envelope me-3"></i>contacto@geophysicalstudies.cl</p>
                 </div>
             </div>
         </div> 
@@ -1009,18 +1004,20 @@
    
 
         <script>
-            $(".custom-carousel").owlCarousel({
+         $(document).ready(function () {
+    $(".custom-carousel").owlCarousel({
         autoWidth: true,
         loop: true,
-        
-       
-        });
-        $(document).ready(function () {
-        $(".custom-carousel .item").click(function () {
-            $(".custom-carousel .item").not($(this)).removeClass("active");
-            $(this).toggleClass("active");
-        });
-        });
+        nav: true, // Activa los botones de anterior y siguiente
+        dots: false, // Oculta los puntos de navegación
+        navText: ["‹", "›"], // Personaliza los botones con flechas
+    });
+
+    $(".custom-carousel .item").click(function () {
+        $(".custom-carousel .item").not($(this)).removeClass("active");
+        $(this).toggleClass("active");
+    });
+});
 
         </script>
 </body>
