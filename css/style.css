@@ -28,11 +28,15 @@
 
   .carousel-item img {
     width: 100%;
-    height: 50%; /* Ajusta según necesites */
-    object-fit: contain; /* Mantiene toda la imagen visible sin recortes */
-   
-}
-    
+    height: auto;
+    max-height: 400px; /* Ajusta según tu diseño */
+    object-fit: contain;
+    display: block; /* Asegura que no haya espacio extra */
+    transition: max-height 0.3s ease-in-out; /* Suaviza el cambio de tamaño */
+} 
+
+
+
 }
 .bg-primary {
     background-color:   #17202a   !important;
@@ -910,3 +914,8 @@ h6,
 .custom-carousel .owl-next {
   right: -50px;
 }
+
+
+/* ------------        pruebas carrusel news--------------- */
+
+
