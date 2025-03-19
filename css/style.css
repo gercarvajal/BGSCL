@@ -456,6 +456,7 @@ h6,
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .testimonial-carousel .owl-nav .owl-prev,
@@ -476,7 +477,7 @@ h6,
 
 .testimonial-carousel .owl-nav .owl-prev:hover,
 .testimonial-carousel .owl-nav .owl-next:hover {
-    background: var(--primary);
+    background: var(--secondary);
     color: #FFFFFF;
 }
 
@@ -916,6 +917,12 @@ h6,
 }
 
 
-/* ------------        pruebas carrusel news--------------- */
+/* ------------        pruebas carrusel destacados --------------- */
 
-
+.destacados-img {
+  width: 100%;
+  height: auto;
+  max-width: 550px; /* Ajusta según el tamaño máximo deseado */
+  border-radius: 10px;
+  object-fit: cover;
+}

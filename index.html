@@ -69,6 +69,7 @@
                                 <a href="#nu" class="dropdown-item">Nuestro Equipo</a>
                                 <a href="#se" class="dropdown-item">Servicios</a>
                                 <a href="#te" class="dropdown-item">Tecnologias</a>
+                                <a href="#de" class="dropdown-item">Destacados</a>
                             </div>
                         </div>
                         <a href="#fo" class="nav-item nav-link active">Contacto</a>
@@ -918,7 +919,7 @@
                                     Especialista en Métodos Geofísicos para la Exploración del Terreno</p>
                                 <div class="d-flex justify-content-center mt-3">
                                     
-                                    <a class="btn btn-square btn-warning m-1" href="https://www.linkedin.com/in/dr-naser-meqbel-b1267385/"><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-square btn-warning m-1" href="https://www.linkedin.com/in/erick-valenzuela-reyes-94aa35102/"><i class="fab fa-linkedin-in"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -971,7 +972,7 @@
     <!-- Team End -->
 
 <!-- Destacados Start -->
-<div class="container-xxl py-5">
+<div id="de" class="container-xxl py-5">
     <div class="container py-5">
         <div class="row g-5">
             <div class="col-lg-2 wow fadeIn" data-wow-delay="0.1s">
@@ -1005,7 +1006,7 @@
                         </div>
                         
                         <div class="d-flex justify-content-center mt-4">
-                            <img class="img-fluid flex-shrink-0 rounded shadow-lg" src="img/d1.png" style="width: 360px; height: 190px;">
+                            <img class="img-fluid flex-shrink-0 rounded shadow-lg destacados-img" src="img/d1.png">
                         </div>
                     </div>
                     <div class="testimonial-item ps-5">
@@ -1028,27 +1029,39 @@
                                         <li><i class="fas fa-circle text-warning fa-xs me-2"></i><strong> Optimizado para diversos sectores:</strong> Aplicable en exploración minera, aguas subterráneas e investigación geotécnica.</li>
                                     </ul>
                                 </div>
-                            </div>
+                             </div>
                         
-                        <div class="d-flex justify-content-center mt-4">
-                            <img class="img-fluid flex-shrink-0 rounded shadow-lg" src="img/d2.png" style="width: 450px; height: 210px;">
-                            <div class="ps-3">
-                               
-                            </div>
-                        </div>
+                            
+                             <div class="d-flex justify-content-center mt-4">
+                                <img class="img-fluid flex-shrink-0 rounded shadow-lg destacados-img" src="img/d2.png">
+                            </div>  
+                           
                     </div>
                     <div class="testimonial-item ps-5">
-                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p class="fs-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg"
-                                style="width: 60px; height: 60px;">
-                            <div class="ps-3">
-                                <h5 class="mb-1">Client Name</h5>
-                                <span>Profession</span>
+                        <h3 class="mb-4 text-white">WalkTEM 2</h3>
+                        <p class="mb-3 text-white-50">El <strong>WalkTEM 2</strong> es un avanzado sistema de exploración electromagnética transitoria (TEM) diseñado para estudios de geofísica aplicada. Gracias a su tecnología de vanguardia, ofrece mediciones de alta resolución, una interfaz intuitiva y una portabilidad excepcional, lo que lo convierte en la mejor opción para exploraciones mineras, hidrogeológicas y geotécnicas.</p>
+                        
+                        <div class="row text-white-50">
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-circle text-warning fa-xs me-2"></i><strong> Alto rendimiento:</strong> sistema TEM de última generación con mediciones precisas y rápidas.</li>
+                                    <li><i class="fas fa-circle text-warning fa-xs me-2"></i><strong> Facilidad de uso:</strong> interfaz intuitiva y operación automatizada para máxima eficiencia.</li>
+                                    <li><i class="fas fa-circle text-warning fa-xs me-2"></i><strong> Portabilidad optimizada:</strong> diseño ligero y compacto ideal para estudios de campo.</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-circle text-warning fa-xs me-2"></i><strong> Resistencia y durabilidad:</strong> estructura robusta para soportar condiciones extremas.</li>
+                                    <li><i class="fas fa-circle text-warning fa-xs me-2"></i><strong> Transferencia de datos eficiente:</strong> almacenamiento y exportación de datos mediante USB.</li>
+                                </ul>
                             </div>
                         </div>
+                        
+                        <div class="d-flex justify-content-center mt-4">
+                            <img class="img-fluid flex-shrink-0 rounded shadow-lg destacados-img" src="img/d3.png">
+                        </div>
                     </div>
+                    
                     
                 </div>
             </div>
@@ -1087,6 +1100,7 @@
                     <a class="btn btn-link" href="#te">Tecnologias</a>
                     <a class="btn btn-link" href="#se">Servicios</a>
                     <a class="btn btn-link" href="#nu">Nuestro Equipo</a>
+                    <a class="btn btn-link" href="#de">Destacados</a>
                    
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
@@ -1156,6 +1170,13 @@
             });
         });
     </script>
+     <!-- agrandar imagen carrusel destacados -->
+    <script>
+        function showImage(imgElement) {
+            let modalImg = document.getElementById("modalImage");
+            modalImg.src = imgElement.src;
+        }
+        </script>
 </body>
 
 </html>
